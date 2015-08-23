@@ -15,8 +15,8 @@ def money():
     while pygame.mixer.music.get_busy() == True:
         GPIO.output(15,False)
         GPIO.output(7,True)
-        time.sleep(0.1)
+        time.sleep(0.05)
         GPIO.output(7,False)
         GPIO.output(15,True)
-        time.sleep(0.1)
+        time.sleep(0.05)
     GPIO.cleanup()
